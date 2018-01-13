@@ -1,0 +1,777 @@
+[
+  {
+    "text": "I discover a bug in a codebase I'm working on, my response is ...",
+    "options": [
+      {
+        "id": "A bug? We'll need to increase the coverage of our test suites.",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 2,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "Jump right in, where are the logs?",
+        "score": {
+          "FirstResponder": 2,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "Figure out if clients (internal/external) are affected, if they aren't this can definitely wait.",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "I think I have an idea on how to boost our system's performance by 10%, the bug can wait.",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 2,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "We should communicate this so that people know we're on it!",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 2
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like spending time refactoring code so that it is beautiful and elegant.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": -2,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": -1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": -1,
+          "Consultant": -1,
+          "Academic": -2,
+          "Craftsman": 1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": -2,
+          "Consultant": -2,
+          "Academic": -2,
+          "Craftsman": 2,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like understanding users' problems and partake in requirement solicitation.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 1,
+          "Academic": -1,
+          "Craftsman": -1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 2,
+          "Academic": -2,
+          "Craftsman": -2,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like mentoring new employees, it is a great opportunity for me to connect with people.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -2
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -1
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 1
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 2
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like mentoring new employees, it is a great opportunity for me to pass on best practises and share the professional experience that I have.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": -2,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": -1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 2,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I often speak at meetups and blog about new technologies and frameworks I have tamed.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": -1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": -1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 2,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I enjoy the thrill of jumping on production incidents and would be willing to put my current tasks aside to dive right into the diagnosis.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": -2,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": -1,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 1,
+          "Consultant": 0,
+          "Academic": -1,
+          "Craftsman": -1,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 2,
+          "Consultant": 0,
+          "Academic": -2,
+          "Craftsman": -2,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I am reluctant to start a new project without a perfectly clear success criteria and a good understanding of what the stockholders want.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -1,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 1,
+          "Academic": -1,
+          "Craftsman": 0,
+          "Humanitarian": -1
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 2,
+          "Academic": -2,
+          "Craftsman": 0,
+          "Humanitarian": -2
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like talking to stockholders and hearing about their pains, it is important to me that they are happy with the solution I provide.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -1,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 1,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like working on abstract concepts even if they can't be fully utilized to bring business value at the moment.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "Meeting schedules is important to me and I am willing to make architectural sacrifices in order to deliver on time. ",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": -2,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": -1,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": -1,
+          "Consultant": 0,
+          "Academic": 1,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": -2,
+          "Consultant": 0,
+          "Academic": 2,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like telling users about new features and getting their feedback.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -2
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -1,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -1
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 1,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "It is important to me to contribute to the shaping of the R&D culture of the company I work for.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -2
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -1
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": -1,
+          "Craftsman": -1,
+          "Humanitarian": 1
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": -2,
+          "Craftsman": -2,
+          "Humanitarian": 2
+        }
+      }
+    ]
+  },
+  {
+    "text": "It is important to me that tangible metrics such as burn down charts, test coverage, development velocity and others perform well in the scope of the projects I work on.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -1,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -1
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": -2
+        }
+      }
+    ]
+  },
+  {
+    "text": "I prefer coming up with best practises for new processes and technologies over following existing practices in known technology stacks.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": -2,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": -1,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 1,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 0,
+          "Academic": 2,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I prefer working on prototypes and exploring new turfs over working on products with slow paced long-term roadmaps.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": -2,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": -1,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 1,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 2,
+          "Consultant": 0,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      }
+    ]
+  },
+  {
+    "text": "I like sketching code on whiteboards.",
+    "options": [
+      {
+        "id": "1",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -2,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "2",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": -1,
+          "Academic": 0,
+          "Craftsman": 0,
+          "Humanitarian": 0
+        }
+      },
+      {
+        "id": "3",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 1,
+          "Academic": 0,
+          "Craftsman": -1,
+          "Humanitarian": -1
+        }
+      },
+      {
+        "id": "4",
+        "score": {
+          "FirstResponder": 0,
+          "Consultant": 2,
+          "Academic": 0,
+          "Craftsman": -2,
+          "Humanitarian": -1
+        }
+      }
+    ]
+  }
+]

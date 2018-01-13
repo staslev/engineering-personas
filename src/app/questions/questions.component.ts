@@ -1,31 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { Question } from '../question';
-import { Answer } from '../answer';
+import { Question, Answer, Score } from '../data-model';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
+
 
 @Component({
   selector: 'app-questions',
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.css']
 })
+
 export class QuestionsComponent implements OnInit {
 
-  question: Question = {
-    text: "I discover a bug in a codebase I'm working on, my response is ...",
-    options: [
-      {
-        id: 'A bug? We\'ll need to increase the coverage of our test suites.',
-        FirstResponder: 0,
-        Consultant: 0,
-        Academic: 0,
-        Craftsman: 2,
-        Humanitarian: 0
-      }
-    ]
-  };
+  questions: Question[];
 
-  constructor() { }
+  getQuestions(){
+    return this.http.get<Question[]>("../assets/eng-persona.json")
+    .subscribe(qs => this.questions = qs);
+  }
+
+  constructor( private http: HttpClient) { }
 
   ngOnInit() {
+    this.getQuestions();
   }
 
 }
