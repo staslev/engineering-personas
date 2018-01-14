@@ -1,15 +1,28 @@
-<div *ngFor="let question of questions" class="form-row">
-  <h4>{{question.text}}</h4>
-  <form class="form-group" #f="ngForm">
-    <label class="center-block" *ngFor="let answer of question.options">
-      <input type="radio" name="unique" [value]="answer.score"
-             [(ngModel)]="question.selectedScore">
-      {{answer.id}} <br/>
-      <!--{{answer.score | json}}-->
-    </label>
-  </form>
+<!--<nouislider [min]="1" [max]="500" [step]="0.05" [(ngModel)]="someRange" ></nouislider>-->
+<div *ngIf="!decoded">
+  <div class="jumbotron" *ngFor="let question of questions">
+    <p>{{question.text}}</p>
+
+    <div class="form-group">
+      <div *ngFor="let answer of question.options">
+        <input class="form-check-input" type="radio" [value]="answer.score"
+               [name]="question.id"
+               [id]="question.id + answer.label"
+               [(ngModel)]="question.selectedScore">
+        <label for="question.id + answer.label">{{answer.label}}</label>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!--<div *ngFor="let question of questions ">-->
-  <!--{{question.selectedScore | json}}-->
-<!--</div>-->
+<div class="jumbotron" style="background-color: #d9edf7" *ngIf="decoded">
+  <h1 class="text-center">
+    You are {{persona.name.startsWith('A') ? 'an' : 'a'}} {{persona.name | uppercase}}!
+  </h1>
+  <pre width="100%">{{persona.desc}}</pre>
+</div>
+
+
+<button type="button" class="btn btn-info btn-lg center-block" *ngIf="!decoded"
+        (click)="computePersona();decoded = !decoded;">Decode me!
+</button>

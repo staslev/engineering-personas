@@ -1,8 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
-  <app-questions></app-questions>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-2 affix">
+      <img src="../assets/personas3.jpg" class="img-responsive center-block">
+      <img src="../assets/personas1.jpg" class="img-responsive center-block">
+      <img src="../assets/personas2.png" class="img-responsive center-block">
+      <img src="../assets/personas4.jpg" class="img-responsive center-block">
+    </div>
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="jumbotron">
+        <h1 class="display-4 text-center">{{ title }}</h1>
+        <hr class="my-4">
+        <p>The questions below were devised based on the ideas put forth by Casey Rosenthal in
+          <a href="https://www.linkedin.com/pulse/engineering-personas-casey-rosenthal/">his
+            post</a> titled quite fittingly: <i>"Engineering Personas"</i>.
+          By examining your answers (and looking deep into your soul) we are able to diagnose
+          what persona you are most likely to be.
+          We also share the finding with you, should you accept this challenge.
+        </p>
+      </div>
+      <app-questions></app-questions>
+    </div>
+    <div class="col-xs-2 col-xs-offset-10 affix">
+      <img src="../assets/personas2.png" class="img-responsive center-block">
+      <img src="../assets/personas4.jpg" class="img-responsive center-block">
+      <img src="../assets/personas1.jpg" class="img-responsive center-block">
+      <img src="../assets/personas3.jpg" class="img-responsive center-block">
+    </div>
+  </div>
 </div>

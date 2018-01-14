@@ -1,691 +1,793 @@
 [
   {
-    "text": "I discover a bug in a codebase I'm working on, my response is ...",
+    "id": 1,
+    "text": "I discover a bug in a codebase i'm working on, my response is ...",
     "options": [
       {
-        "id": "A bug? We'll need to increase the coverage of our test suites.",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 2,
-        "Humanitarian": 0
+        "label": "A bug? we'll need to increase the coverage of our test suites.",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 2,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "Jump right in, where are the logs?",
-        "FirstResponder": 2,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
-
+        "label": "Jump right in, where are the logs?",
+        "score": {
+          "firstResponder": 2,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "Figure out if clients (internal/external) are affected, if they aren't this can definitely wait.",
-        "FirstResponder": 0,
-        "Consultant": 2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
-
+        "label": "Figure out if clients (internal/external) are affected, if they aren't this can definitely wait.",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "I think I have an idea on how to boost our system's performance by 10%, the bug can wait.",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 2,
-        "Craftsman": 0,
-        "Humanitarian": 0
-
+        "label": "I think i have an idea on how to boost our system's performance by 10%, the bug can wait.",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 2,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "We should communicate this so that people know we're on it!",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 2
-
+        "label": "We should communicate this so that people know we're on it!",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 2
+        }
       }
     ]
   },
   {
+    "id": 2,
     "text": "I like spending time refactoring code so that it is beautiful and elegant.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": -2,
-        "Humanitarian": 0
-
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": -2,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": -1,
-        "Humanitarian": 0
-
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": -1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": -1,
-        "Consultant": -1,
-        "Academic": -2,
-        "Craftsman": 1,
-        "Humanitarian": 0
-
+        "label": "Agree",
+        "score": {
+          "firstResponder": -1,
+          "consultant": -1,
+          "academic": -2,
+          "craftsman": 1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": -2,
-        "Consultant": -2,
-        "Academic": -2,
-        "Craftsman": 2,
-        "Humanitarian": 0
-
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": -2,
+          "consultant": -2,
+          "academic": -2,
+          "craftsman": 2,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 3,
     "text": "I like understanding users' problems and partake in requirement solicitation.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
-
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
-
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 1,
-        "Academic": -1,
-        "Craftsman": -1,
-        "Humanitarian": 0
-
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 1,
+          "academic": -1,
+          "craftsman": -1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 2,
-        "Academic": -2,
-        "Craftsman": -2,
-        "Humanitarian": 0
-
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 2,
+          "academic": -2,
+          "craftsman": -2,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 4,
     "text": "I like mentoring new employees, it is a great opportunity for me to connect with people.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -2
-
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -2
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -1
-
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -1
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 1
-
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 1
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 2
-
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 2
+        }
       }
     ]
   },
   {
-    "text": "I like mentoring new employees, it is a great opportunity for me to pass on best practises and share the professional experience that I have.",
+    "id": 5,
+    "text": "I like mentoring new employees, it is a great opportunity for me to pass on best practises and share the professional experience that i have.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": -2,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": -2,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": -1,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": -1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 1,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 2,
-        "Humanitarian": 0
-      },
-      {
-        "text": "I like mentoring new employees, it is a great opportunity for me to pass on best practises and share the professional experience that I have.",
-        "options": [
-          {
-            "id": "1",
-            "FirstResponder": 0,
-            "Consultant": 0,
-            "Academic": 0,
-            "Craftsman": -2,
-            "Humanitarian": 0
-          },
-          {
-            "id": "2",
-            "FirstResponder": 0,
-            "Consultant": 0,
-            "Academic": 0,
-            "Craftsman": -1,
-            "Humanitarian": 0
-          },
-          {
-            "id": "3",
-            "FirstResponder": 0,
-            "Consultant": 0,
-            "Academic": 0,
-            "Craftsman": 1,
-            "Humanitarian": 0
-          },
-          {
-            "id": "4",
-            "FirstResponder": 0,
-            "Consultant": 0,
-            "Academic": 0,
-            "Craftsman": 2,
-            "Humanitarian": 0
-          }
-        ]
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 2,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
-    "text": "I often speak at meetups and blog about new technologies and frameworks I have tamed.",
+    "id": 6,
+    "text": "I often speak at meetups and blog about new technologies and frameworks i have tamed.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": -1,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": -1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": -1,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": -1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 1,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 2,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 2,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 7,
     "text": "I enjoy the thrill of jumping on production incidents and would be willing to put my current tasks aside to dive right into the diagnosis.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": -2,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": -2,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": -1,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": -1,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 1,
-        "Consultant": 0,
-        "Academic": -1,
-        "Craftsman": -1,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 1,
+          "consultant": 0,
+          "academic": -1,
+          "craftsman": -1,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 2,
-        "Consultant": 0,
-        "Academic": -2,
-        "Craftsman": -2,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 2,
+          "consultant": 0,
+          "academic": -2,
+          "craftsman": -2,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 8,
     "text": "I am reluctant to start a new project without a perfectly clear success criteria and a good understanding of what the stockholders want.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": -2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": -1,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -1,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 1,
-        "Academic": -1,
-        "Craftsman": 0,
-        "Humanitarian": -1
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 1,
+          "academic": -1,
+          "craftsman": 0,
+          "humanitarian": -1
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 2,
-        "Academic": -2,
-        "Craftsman": 0,
-        "Humanitarian": -2
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 2,
+          "academic": -2,
+          "craftsman": 0,
+          "humanitarian": -2
+        }
       }
     ]
   },
   {
-    "text": "I like talking to stockholders and hearing about their pains, it is important to me that they are happy with the solution I provide.",
+    "id": 9,
+    "text": "I like talking to stockholders and hearing about their pains, it is important to me that they are happy with the solution i provide.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": -2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": -1,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -1,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 1,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 1,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 10,
     "text": "I like working on abstract concepts even if they can't be fully utilized to bring business value at the moment.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
-    "text": "Meeting schedules is important to me and I am willing to make architectural sacrifices in order to deliver on time. ",
+    "id": 11,
+    "text": "meeting schedules is important to me and i am willing to make architectural sacrifices in order to deliver on time. ",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": -2,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": -2,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": -1,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": -1,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": -1,
-        "Consultant": 0,
-        "Academic": 1,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": -1,
+          "consultant": 0,
+          "academic": 1,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": -2,
-        "Consultant": 0,
-        "Academic": 2,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": -2,
+          "consultant": 0,
+          "academic": 2,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 12,
     "text": "I like telling users about new features and getting their feedback.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": -2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -2
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -2
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": -1,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -1
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -1,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -1
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 1,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 1,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
-    "text": "It is important to me to contribute to the shaping of the R&D culture of the company I work for.",
+    "id": 13,
+    "text": "it is important to me to contribute to the shaping of the r&d culture of the company i work for.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -2
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -2
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -1
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -1
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": -1,
-        "Craftsman": -1,
-        "Humanitarian": 1
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": -1,
+          "craftsman": -1,
+          "humanitarian": 1
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": -2,
-        "Craftsman": -2,
-        "Humanitarian": 2
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": -2,
+          "craftsman": -2,
+          "humanitarian": 2
+        }
       }
     ]
   },
   {
-    "text": "It is important to me that tangible metrics such as burn down charts, test coverage, development velocity and others perform well in the scope of the projects I work on.",
+    "id": 14,
+    "text": "it is important to me that tangible metrics such as burn down charts, test coverage, development velocity and others perform well in the scope of the projects i work on.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": -1,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -1
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -1,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -1
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": -2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": -2
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": -2
+        }
       }
     ]
   },
   {
+    "id": 15,
     "text": "I prefer coming up with best practises for new processes and technologies over following existing practices in known technology stacks.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": -2,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": -2,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": -1,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": -1,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 1,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 1,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 0,
-        "Academic": 2,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 0,
+          "academic": 2,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 16,
     "text": "I prefer working on prototypes and exploring new turfs over working on products with slow paced long-term roadmaps.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": -2,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": -2,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": -1,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": -1,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 1,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Agree",
+        "score": {
+          "firstResponder": 1,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 2,
-        "Consultant": 0,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 2,
+          "consultant": 0,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       }
     ]
   },
   {
+    "id": 17,
     "text": "I like sketching code on whiteboards.",
     "options": [
       {
-        "id": "1",
-        "FirstResponder": 0,
-        "Consultant": -2,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Strongly Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -2,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "2",
-        "FirstResponder": 0,
-        "Consultant": -1,
-        "Academic": 0,
-        "Craftsman": 0,
-        "Humanitarian": 0
+        "label": "Disagree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": -1,
+          "academic": 0,
+          "craftsman": 0,
+          "humanitarian": 0
+        }
       },
       {
-        "id": "3",
-        "FirstResponder": 0,
-        "Consultant": 1,
-        "Academic": 0,
-        "Craftsman": -1,
-        "Humanitarian": -1
+        "label": "Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 1,
+          "academic": 0,
+          "craftsman": -1,
+          "humanitarian": -1
+        }
       },
       {
-        "id": "4",
-        "FirstResponder": 0,
-        "Consultant": 2,
-        "Academic": 0,
-        "Craftsman": -2,
-        "Humanitarian": -1
+        "label": "Strongly Agree",
+        "score": {
+          "firstResponder": 0,
+          "consultant": 2,
+          "academic": 0,
+          "craftsman": -2,
+          "humanitarian": -1
+        }
       }
     ]
   }
