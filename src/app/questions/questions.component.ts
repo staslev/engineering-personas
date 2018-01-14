@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Question, Answer, Score, Persona, FirstResponder, Consultant, Academic, Craftsman,
-Humanitarian} from '../data-model';
+import { Question, Answer, Score} from '../data-model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
+import { FormsModule }   from '@angular/forms';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -13,13 +14,11 @@ import { Observable } from 'rxjs/Observable';
 
 export class QuestionsComponent implements OnInit {
 
-  someRange: number[] = [100, 1000];
-
   decoded:boolean = false;
 
   questions: Question[];
 
-  persona: Persona;
+  persona: string;
 
   getQuestions(){
     return this.http
@@ -47,28 +46,29 @@ export class QuestionsComponent implements OnInit {
         var max = Math.max(firstResponder, consultant, academic, craftsman, humanitarian)
 
         if(max == firstResponder) {
-          this.persona = new FirstResponder();
+          this.persona = 'FirstResponder';
           console.log("computing persona: firstResponder");
         } else if(max == consultant) {
-          this.persona = new Consultant();
+          this.persona = 'Consultant';
           console.log("computing persona: consultant");
         } else if(max == academic) {
-          this.persona = new Academic();
+          this.persona = 'Academic';
           console.log("computing persona: academic");
         } else if(max == craftsman) {
-          this.persona =  new Craftsman();
+          this.persona =  'Craftsman';
           console.log("computing persona: craftsman");
         } else if(max == humanitarian) {
-          this.persona =  new Humanitarian();
+          this.persona =  'Humanitarian';
           console.log("computing persona: humanitarian");
         } else {
-          this.persona =  new Persona('Spy', 'Your persona cannot be identified!');
+          this.persona =  'Spy';
         }
     }
 
+    this.router.navigate(['persona', this.persona]);
   }
 
-  constructor( private http: HttpClient) { }
+  constructor( private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
     this.getQuestions();

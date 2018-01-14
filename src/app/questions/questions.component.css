@@ -1,4 +1,3 @@
-@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Lora|Macondo|Libre+Barcode+128+Text');
 
 label {
@@ -7,20 +6,12 @@ label {
   padding-left: 10px;
 }
 
-p {
-  font-family: 'Lora', cursive;
-  font-size: 18pt;
+input[type="radio"] {
+  margin-right: 10px;
 }
 
-pre {
+.lora {
   font-family: 'Lora', cursive;
-  font-size: 18pt;
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-  overflow-wrap: break-word;
 }
 
 button {

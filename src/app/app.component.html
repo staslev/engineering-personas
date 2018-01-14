@@ -1,31 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-xs-2 affix">
-      <img src="../assets/personas3.jpg" class="img-responsive center-block">
-      <img src="../assets/personas1.jpg" class="img-responsive center-block">
-      <img src="../assets/personas2.png" class="img-responsive center-block">
-      <img src="../assets/personas4.jpg" class="img-responsive center-block">
+    <div class="col">
+      <h1 class="display-4 text-center pt-5">{{ title }}</h1>
     </div>
-    <div class="col-xs-8 col-xs-offset-2">
-      <div class="jumbotron">
-        <h1 class="display-4 text-center">{{ title }}</h1>
-        <hr class="my-4">
-        <p>The questions below were devised based on the ideas put forth by Casey Rosenthal in
-          <a href="https://www.linkedin.com/pulse/engineering-personas-casey-rosenthal/">his
-            post</a> titled quite fittingly: <i>"Engineering Personas"</i>.
-          By examining your answers (and looking deep into your soul) we are able to diagnose
-          what persona you are most likely to be.
-          We also share the finding with you, should you accept this challenge.
-        </p>
-      </div>
-      <app-questions></app-questions>
-    </div>
-    <div class="col-xs-2 col-xs-offset-10 affix">
-      <img src="../assets/personas2.png" class="img-responsive center-block">
-      <img src="../assets/personas4.jpg" class="img-responsive center-block">
-      <img src="../assets/personas1.jpg" class="img-responsive center-block">
-      <img src="../assets/personas3.jpg" class="img-responsive center-block">
+  </div>
+  <div class="row">
+    <div class="col">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

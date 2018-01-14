@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Joti+One');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
+.kav {
+  font-family: 'Kavivanar', cursive;
+}
+
+.joti {
+  font-family: 'Joti One', cursive;
+  font-size: 65pt;
+}

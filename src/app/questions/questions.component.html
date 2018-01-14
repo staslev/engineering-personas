@@ -1,28 +1,46 @@
-<!--<nouislider [min]="1" [max]="500" [step]="0.05" [(ngModel)]="someRange" ></nouislider>-->
-<div *ngIf="!decoded">
-  <div class="jumbotron" *ngFor="let question of questions">
-    <p>{{question.text}}</p>
+<div>
+  <p class="lead pt-4">The questions below were devised based on the ideas put forth by Casey
+    Rosenthal
+    in
+    <a href="https://www.linkedin.com/pulse/engineering-personas-casey-rosenthal/">his
+      post</a> titled quite fittingly: <i>"Engineering Personas"</i>.
+    By examining your answers and applying advanced machine learning technique, included but not
+    limited to, AI, NLP, CNN, DNN, RNN, and of course the ABC,
+    we are able to diagnose
+    the kind of engineering persona you are most likely to be. <br/>
+    While none of this is backed up by actual research, it's a cool experiment nonetheless.
+    Shall we begin?
+  </p>
 
-    <div class="form-group">
-      <div *ngFor="let answer of question.options">
-        <input class="form-check-input" type="radio" [value]="answer.score"
-               [name]="question.id"
-               [id]="question.id + answer.label"
-               [(ngModel)]="question.selectedScore">
-        <label for="question.id + answer.label">{{answer.label}}</label>
+  <form #form="ngForm" class="pt-5">
+    <div *ngFor="let question of questions">
+      <div class="d-flex">
+        <h4 class="lora">
+          {{question.text}}
+        </h4>
+        <span class="px-2 ml-auto">({{question.id}}/{{questions.length}})</span>
       </div>
+      <hr class="my-4">
+
+      <div class="pb-5 mx-5">
+        <div *ngFor="let answer of question.options" class="pb-1">
+          <label>
+            <input type="radio" [value]="answer.score"
+                   [name]="question.id"
+                   [id]="question.id + answer.label"
+                   [(ngModel)]="question.selectedScore"
+                   required>
+            <span>{{answer.label}}</span>
+          </label>
+        </div>
+      </div>
+
     </div>
+  </form>
+  <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-info btn-lg"
+            [disabled]="!form.valid"
+            (click)="computePersona()">Decode me!
+    </button>
   </div>
 </div>
-
-<div class="jumbotron" style="background-color: #d9edf7" *ngIf="decoded">
-  <h1 class="text-center">
-    You are {{persona.name.startsWith('A') ? 'an' : 'a'}} {{persona.name | uppercase}}!
-  </h1>
-  <pre width="100%">{{persona.desc}}</pre>
-</div>
-
-
-<button type="button" class="btn btn-info btn-lg center-block" *ngIf="!decoded"
-        (click)="computePersona();decoded = !decoded;">Decode me!
-</button>
