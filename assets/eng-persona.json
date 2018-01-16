@@ -34,7 +34,7 @@
         }
       },
       {
-        "label": "I think i have an idea on how to boost our system's performance by 10%, the bug can wait.",
+        "label": "I think I have an idea on how to boost our system's performance by 10%, the bug can wait.",
         "score": {
           "firstResponder": 0,
           "consultant": 0,
@@ -195,7 +195,7 @@
   },
   {
     "id": 5,
-    "text": "I like mentoring new employees, it is a great opportunity for me to pass on best practises and share the professional experience that i have.",
+    "text": "I like mentoring new employees, it is a great opportunity for me to pass on best practises and share the professional experience that I have.",
     "options": [
       {
         "label": "Strongly Disagree",
@@ -241,7 +241,7 @@
   },
   {
     "id": 6,
-    "text": "I often speak at meetups and blog about new technologies and frameworks i have tamed.",
+    "text": "I often speak at meetups and blog about new technologies and frameworks I have tamed.",
     "options": [
       {
         "label": "Strongly Disagree",
@@ -379,7 +379,7 @@
   },
   {
     "id": 9,
-    "text": "I like talking to stockholders and hearing about their pains, it is important to me that they are happy with the solution i provide.",
+    "text": "I like talking to stockholders and hearing about their pains, it is important to me that they are happy with the solution I provide.",
     "options": [
       {
         "label": "Strongly Disagree",
@@ -471,7 +471,7 @@
   },
   {
     "id": 11,
-    "text": "meeting schedules is important to me and i am willing to make architectural sacrifices in order to deliver on time. ",
+    "text": "Meeting schedules is important to me and I am willing to make architectural sacrifices in order to deliver on time.",
     "options": [
       {
         "label": "Strongly Disagree",
