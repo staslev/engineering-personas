@@ -22,7 +22,7 @@ export class QuestionsComponent implements OnInit {
 
   getQuestions(){
     return this.http
-            .get<Question[]>("../assets/eng-persona.json")
+            .get<Question[]>("https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/eng-persona.json")
             .subscribe(qs => this.questions = qs);
   }
 

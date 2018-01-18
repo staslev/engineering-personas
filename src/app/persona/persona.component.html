@@ -1,71 +1,95 @@
 <div [ngSwitch]="persona" class="pt-5">
 
-  <h4 class="kav display-4 text-center"> - You are {{persona.startsWith('A') ? 'an' : 'a'}}
-    <span class="joti">{{toHumanReadable(persona)}}</span> !</h4>
-
-  <div *ngSwitchCase="'FirstResponder'" class="d-flex pt-5">
-    <p class="lead">
-      Your are primarily motivated by the energy and attention focused on a specific problem.
-      You excel at diving into a problem unprompted, and you learn by pushing boundaries.<br/>
-      You will often find first responders well positioned as SREs or managing operational
-      incidents.<br/>
-      Working on projects that have long lifecycles will bore you, which eventually manifests as a
-      lack of motivation.
-    </p>
-    <img src="../assets/fire-fighter.gif" class="img-responsive center-block">
+  <div *ngSwitchCase="'FirstResponder'">
+    <h4 class="kav display-4 text-center"> - You are a <span class="joti">First Responder</span>!</h4>
+    <div class="d-flex pt-5">
+      <p class="lead">
+        Your are primarily motivated by the energy and attention focused on a specific problem.
+        You excel at diving into a problem unprompted, and you learn by pushing boundaries.<br/>
+        You will often find first responders well positioned as SREs or managing operational
+        incidents.<br/>
+        Working on projects that have long lifecycles will bore you, which eventually manifests as a
+        lack of motivation.
+      </p>
+      <img
+        src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/fire-fighter.gif"
+        class="img-responsive center-block">
+    </div>
   </div>
-  <div *ngSwitchCase="'Consultant'" class="d-flex pt-5">
-    <p class="lead">
-      You are primarily motivated by the satisfaction of customer requirements.
-      You like to understand a problem and connect the dots from the current state of the world to a
-      solution. <br/>
-      Consultants are well placed in consultancies and teams that interact with stakeholders on a
-      regular basis.<br/>
-      You are frustrated by projects without clear success criteria.
-    </p>
-    <img src="../assets/consultant.jpg" class="img-responsive center-block">
+  <div *ngSwitchCase="'Consultant'">
+    <h4 class="kav display-4 text-center"> - You are a <span class="joti">Consultant</span>!</h4>
+    <div class="d-flex pt-5">
+      <p class="lead">
+        You are primarily motivated by the satisfaction of customer requirements.
+        You like to understand a problem and connect the dots from the current state of the world to a
+        solution. <br/>
+        Consultants are well placed in consultancies and teams that interact with stakeholders on a
+        regular basis.<br/>
+        You are frustrated by projects without clear success criteria.
+      </p>
+      <img
+        src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/consultant.jpg"
+        class="img-responsive center-block">
+    </div>
   </div>
-  <div *ngSwitchCase="'Academic'" class="d-flex pt-5">
-    <p class="lead">
-      You are primarily motivated by the exploration and development of ideas.<br/>
-      Idiosyncrasies present a wide spectrum of what one would consider an interesting idea:
-      everything from actual academic literature to informally accrued observations over one's
-      career.<br/>
-      To academics, the concept is often more important than the code that instantiates it.
-      Academics are a wonderful fit both on teams that don't have strong delivery goals (R&D)
-      and teams that are working in cutting edge arenas where best practices aren't yet defined or
-      widely known.<br/>
-      As the name implies, many Academics have PhDs and higher degrees, and are found in academia.
-    </p>
-    <img src="../assets/academic.png" class="img-responsive center-block">
+  <div *ngSwitchCase="'Academic'">
+    <h4 class="kav display-4 text-center"> - You are an <span class="joti">Academic</span>!</h4>
+    <div class="d-flex pt-5">
+      <p class="lead">
+        You are primarily motivated by the exploration and development of ideas.<br/>
+        Idiosyncrasies present a wide spectrum of what one would consider an interesting idea:
+        everything from actual academic literature to informally accrued observations over one's
+        career.<br/>
+        To academics, the concept is often more important than the code that instantiates it.
+        Academics are a wonderful fit both on teams that don't have strong delivery goals (R&D)
+        and teams that are working in cutting edge arenas where best practices aren't yet defined or
+        widely known.<br/>
+        As the name implies, many Academics have PhDs and higher degrees, and are found in academia.
+      </p>
+      <img
+        src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/academic.png"
+        class="img-responsive center-block">
+    </div>
   </div>
-  <div *ngSwitchCase="'Craftsman'" class="d-flex pt-5">
-    <p class="lead">
-      You are primarily motivated by the feeling of achievement as you increase your experience and
-      honer their skill. <br/>
-      How code is written is often more important to you than the purpose of the program. <br/>
-      Craftspeople often champion specific practices like TDD, pair programming, or even agile/scrum
-      methodologies. <br/>
-      Mentorship, pairing, and some evangelism often come easily to craftspeople, as it reinforces
-      and celebrates their skill development. <br/>
-      Promoting a hack for the sake of expediency feels like a loss to you.
-    </p>
-    <img src="../assets/craftsman.png" class="img-responsive center-block">
+  <div *ngSwitchCase="'Craftsman'">
+    <h4 class="kav display-4 text-center"> - You are a <span class="joti">Craftsman</span>!</h4>
+    <div class="d-flex pt-5">
+      <p class="lead">
+        You are primarily motivated by the feeling of achievement as you increase your experience and
+        honer their skill. <br/>
+        How code is written is often more important to you than the purpose of the program. <br/>
+        Craftspeople often champion specific practices like TDD, pair programming, or even agile/scrum
+        methodologies. <br/>
+        Mentorship, pairing, and some evangelism often come easily to craftspeople, as it reinforces
+        and celebrates their skill development. <br/>
+        Promoting a hack for the sake of expediency feels like a loss to you.
+      </p>
+      <img
+        src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/craftsman.png"
+        class="img-responsive center-block">
+    </div>
   </div>
-  <div *ngSwitchCase="'Humanitarian'" class="d-flex pt-5">
-    <p class="lead">
-      You are primarily motivated by the impact that your work has on a community with which you
-      identify. <br/>
-      This could be a programming community, a company, or the industry in which you work.
-      On small scales this manifests as mentorship; on larger scales,
-      you can often find humanitarian speaking at or even organizing conferences and events.<br/>
-      Organizational norms, company culture, and communication is a component of job satisfaction
-      for Humanitarians, and the mission of the organization or the value supplied by the product
-      are often more important to you than the code that they specifically work on. <br/>
-      Humanitarians find sterile work conditions heavily focused on performance metrics
-      (lines of code shipped, cumulative point velocity, bugs squashed, etc.) deeply unsatisfying.
-    </p>
-    <img src="../assets/humanitarian.png" class="img-responsive center-block">
+  <div *ngSwitchCase="'Humanitarian'">
+    <h4 class="kav display-4 text-center"> - You are a <span class="joti">Humanitarian</span>!</h4>
+    <div class="d-flex pt-5">
+      <p class="lead">
+        You are primarily motivated by the impact that your work has on a community with which you
+        identify. <br/>
+        This could be a programming community, a company, or the industry in which you work.
+        On small scales this manifests as mentorship; on larger scales,
+        you can often find humanitarian speaking at or even organizing conferences and events.<br/>
+        Organizational norms, company culture, and communication is a component of job satisfaction
+        for Humanitarians, and the mission of the organization or the value supplied by the product
+        are often more important to you than the code that they specifically work on. <br/>
+        Humanitarians find sterile work conditions heavily focused on performance metrics
+        (lines of code shipped, cumulative point velocity, bugs squashed, etc.) deeply unsatisfying.
+      </p>
+      <img
+        src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/humanitarian.png"
+        class="img-responsive center-block">
+    </div>
   </div>
-  <p *ngSwitchDefault>??</p>
+  <div *ngSwitchDefault>
+    <h4 class="kav display-4 text-center">Also, are you trying to hack?</h4>
+  </div>
 </div>
