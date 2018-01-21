@@ -1,33 +1,8 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <h1 class="display-4 text-center">{{ title }}</h1>
-    </div>
+  <div class="d-flex justify-content-center pt-3">
+    <h1 class="display-4">{{ title }}</h1>
   </div>
-  <div class="row" style="position: fixed">
-    <div class="col-2">
-      <div>
-        <img src="../assets/academic.png" class="img-fluid">
-        <img src="../assets/consultant.jpg" class="img-fluid">
-        <img src="../assets/craftsman.png" class="img-fluid">
-      </div>
-    </div>
-    <div class="col">
-      <div></div>
-    </div>
-    <div class="col-2">
-      <div>
-        <img src="../assets/first-responder.gif" class="img-fluid">
-        <img src="../assets/humanitarian.png" class="img-fluid">
-        <div class="d-flex justify-content-center">
-          <img src="../assets/na.png" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6 offset-3">
-      <router-outlet></router-outlet>
-    </div>
+  <div class="d-flex justify-content-center">
+    <router-outlet></router-outlet>
   </div>
 </div>

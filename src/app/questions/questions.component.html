@@ -1,53 +1,71 @@
-<div>
-  <p class="lead pt-4">The questions below were devised based on the ideas put forth by Casey
-    Rosenthal
-    in
-    <a href="https://www.linkedin.com/pulse/engineering-personas-casey-rosenthal/">his
-      post</a> titled quite fittingly: <i>"Engineering Personas"</i>.
-    By examining your answers and applying advanced machine learning technique, included but not
-    limited to, AI, NLP, CNN, DNN, RNN, and of course the ABC,
-    we are able to diagnose
-    the kind of engineering persona you are most likely to be. <br/>
-    While none of this is backed up by actual research, it's a cool experiment nonetheless.
-    Shall we begin?
-  </p>
-
-  <form #form="ngForm">
-    <div *ngFor="let question of questions">
-      <div class="d-flex pt-5">
-        <h5 class="lora">
-          {{question.text}}
-        </h5>
-        <span class="px-2 ml-auto"
-              [style.color]="question.selectedScore === undefined ? 'black' : '#39e600'">
+<div class="row" style="position: fixed">
+  <div class="col-2">
+    <img src="../assets/consultant.jpg" class="img-fluid">
+    <img src="../assets/craftsman.png" class="img-fluid">
+    <img src="../assets/academic.png" class="img-fluid">
+  </div>
+  <div class="col">
+    <div></div>
+  </div>
+  <div class="col-2">
+    <img src="../assets/first-responder.gif" class="img-fluid">
+    <img src="../assets/humanitarian.png" class="img-fluid">
+    <div class="d-flex justify-content-center">
+      <img src="../assets/na.png" class="img-fluid">
+    </div>
+  </div>
+</div>
+<div class="row pt-3">
+  <div class="col-6 offset-3">
+    <div>
+      <p class="lead pt-4">The questions below were devised based on the ideas put forth by Casey
+        Rosenthal
+        in
+        <a href="https://www.linkedin.com/pulse/engineering-personas-casey-rosenthal/">his
+          post</a> titled quite fittingly: <i>"Engineering Personas"</i>.
+        By examining your answers and applying advanced machine learning technique, included but
+        not limited to, AI, NLP, CNN, DNN, RNN, and of course the ABC,
+        we are able to diagnose the kind of engineering persona you are most likely to be. <br/>
+        While none of this is backed up by actual research, it's a cool experiment nonetheless.
+        Shall we begin?
+      </p>
+      <form #form="ngForm">
+        <div *ngFor="let question of questions">
+          <div class="d-flex pt-5">
+            <h5 class="lora">
+              {{question.text}}
+            </h5>
+            <span class="px-2 ml-auto"
+                  [style.color]="question.selectedScore === undefined ? 'black' : '#39e600'">
           ({{question.id}}/{{questions.length}})
         </span>
-      </div>
-      <hr class="pb-1">
+          </div>
+          <hr class="pb-1">
 
-      <mat-radio-group required [name]="'q-' + question.id"
-                       [(ngModel)]="question.selectedScore"
-                       [class]="question.id == 1 ? '' : 'd-flex justify-content-center flex-wrap'">
-        <mat-radio-button *ngFor="let answer of question.options"
-                          [class]="question.id == 1 ? 'd-flex pb-1' : 'pb-1 px-5'"
-                          [value]="answer.score"
-                          [name]="question.id"
-                          color="primary"
-                          ngDefaultControl>
-          {{answer.label}}
-        </mat-radio-button>
-      </mat-radio-group>
+          <mat-radio-group required [name]="'q-' + question.id"
+                           [(ngModel)]="question.selectedScore"
+                           [class]="question.id == 1 ? '' : 'd-flex justify-content-center flex-wrap'">
+            <mat-radio-button *ngFor="let answer of question.options"
+                              [class]="question.id == 1 ? 'd-flex pb-1' : 'pb-1 px-5'"
+                              [value]="answer.score"
+                              [name]="question.id"
+                              color="primary"
+                              ngDefaultControl>
+              {{answer.label}}
+            </mat-radio-button>
+          </mat-radio-group>
 
+        </div>
+
+        <div class="d-flex justify-content-center pt-5">
+          <button type="submit"
+                  class="btn btn-secondary"
+                  [disabled]="!form.valid"
+                  (click)="computePersona()">Decode me!
+          </button>
+        </div>
+
+      </form>
     </div>
-
-    <div class="d-flex justify-content-center pt-5">
-      <button type="submit"
-              class="btn btn-secondary"
-              [disabled]="!form.valid"
-              (click)="computePersona()">Decode me!
-      </button>
-    </div>
-
-  </form>
-
+  </div>
 </div>
