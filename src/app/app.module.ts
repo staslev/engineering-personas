@@ -8,13 +8,18 @@ import { MatRadioModule } from '@angular/material/radio';
 
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { QuestionService } from './questions/question.service';
+import { QuestionsResolverService } from './questions/questions-resolver.service';
 import { PersonaComponent } from './persona/persona.component';
-import { QuestionService } from './question.service';
+
 
 const appRoutes: Routes = [
   {
     path: 'personas',
-    component: QuestionsComponent
+    component: QuestionsComponent,
+    resolve: {
+      questions: QuestionsResolverService
+    }
   },
   {
     path: 'persona/:type',
@@ -41,7 +46,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MatRadioModule
   ],
-  providers: [QuestionService],
+  providers: [QuestionService, QuestionsResolverService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

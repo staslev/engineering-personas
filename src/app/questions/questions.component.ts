@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
-import { Router } from '@angular/router';
-import { QuestionService } from '../question.service';
+import { Router, ActivatedRoute } from '@angular/router';
+
 import { Question, Answer, Score} from '../data-model';
 
 
@@ -17,16 +17,18 @@ export class QuestionsComponent implements OnInit {
 
   persona: string;
 
-  constructor(private questionService: QuestionService, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.getQuestions();
   }
 
   getQuestions() {
-    this.questionService
-      .getQuestions()
-      .subscribe(qs => this.questions = qs);
+    this.route
+      .data
+      .subscribe((data: { questions: Question[] }) => {
+        this.questions = data.questions;
+      });
   }
 
   computePersona() {
