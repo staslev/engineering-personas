@@ -12,35 +12,42 @@
     Shall we begin?
   </p>
 
-  <form #form="ngForm" class="pt-5">
+  <form #form="ngForm">
     <div *ngFor="let question of questions">
-      <div class="d-flex">
-        <h4 class="lora">
+      <div class="d-flex pt-5">
+        <h5 class="lora">
           {{question.text}}
-        </h4>
-        <span class="px-2 ml-auto">({{question.id}}/{{questions.length}})</span>
+        </h5>
+        <span class="px-2 ml-auto"
+              [style.color]="question.selectedScore === undefined ? 'black' : '#39e600'">
+          ({{question.id}}/{{questions.length}})
+        </span>
       </div>
-      <hr class="my-4">
+      <hr class="pb-1">
 
-      <div class="pb-5 mx-5">
-        <div *ngFor="let answer of question.options" class="pb-1">
-          <label>
-            <input type="radio" [value]="answer.score"
-                   [name]="question.id"
-                   [id]="question.id + answer.label"
-                   [(ngModel)]="question.selectedScore"
-                   required>
-            <span>{{answer.label}}</span>
-          </label>
-        </div>
-      </div>
+      <mat-radio-group required [name]="'q-' + question.id"
+                       [(ngModel)]="question.selectedScore"
+                       [class]="question.id == 1 ? '' : 'd-flex justify-content-center flex-wrap'">
+        <mat-radio-button *ngFor="let answer of question.options"
+                          [class]="question.id == 1 ? 'd-flex pb-1' : 'pb-1 px-5'"
+                          [value]="answer.score"
+                          [name]="question.id"
+                          color="primary"
+                          ngDefaultControl>
+          {{answer.label}}
+        </mat-radio-button>
+      </mat-radio-group>
 
     </div>
+
+    <div class="d-flex justify-content-center pt-5">
+      <button type="submit"
+              class="btn btn-secondary"
+              [disabled]="!form.valid"
+              (click)="computePersona()">Decode me!
+      </button>
+    </div>
+
   </form>
-  <div class="d-flex justify-content-center">
-    <button type="submit" class="btn btn-info btn-lg"
-            [disabled]="!form.valid"
-            (click)="computePersona()">Decode me!
-    </button>
-  </div>
+
 </div>

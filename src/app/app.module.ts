@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
@@ -37,7 +39,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    BrowserAnimationsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
