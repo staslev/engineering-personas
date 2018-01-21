@@ -9,6 +9,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { PersonaComponent } from './persona/persona.component';
+import { QuestionService } from './question.service';
 
 const appRoutes: Routes = [
   {
@@ -36,14 +37,11 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    ),
+    RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatRadioModule
   ],
-  providers: [],
+  providers: [QuestionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
