@@ -6,6 +6,18 @@
 }
 
 span {
-  font-family: 'Joti One', cursive;
-  font-size: 65px;
+ font-family: 'Joti One', cursive;
+}
+
+@media screen and (max-width: 575px) {
+   span {
+     font-size: 50px;
+   }
+ }
+
+// small and larger
+@media screen and (min-width: 576px) {
+  span {
+    font-size: 60px;
+  }
 }
