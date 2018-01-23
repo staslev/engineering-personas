@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabled' }),
     BrowserAnimationsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatButtonModule
   ],
   providers: [QuestionService, QuestionsResolverService],
   bootstrap: [AppComponent]

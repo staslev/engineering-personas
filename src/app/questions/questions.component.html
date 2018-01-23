@@ -109,11 +109,12 @@
           </mat-radio-group>
 
         </div>
-        <div class="d-flex justify-content-center pt-5">
-          <button type="submit"
-                  class="btn btn-secondary"
+        <div class="d-flex justify-content-center py-5">
+          <span class="decode">Decode</span>
+          <button mat-button
                   [disabled]="!form.valid"
-                  (click)="computePersona()">Decode me!
+                  color="primary"
+                  (click)="computePersona()">me!
           </button>
         </div>
       </div>

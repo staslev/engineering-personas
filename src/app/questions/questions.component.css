@@ -17,10 +17,14 @@ input[type="radio"] {
 
 button {
     margin-bottom: 0.5cm;
-    font-family: 'Libre Barcode 128 Text', cursive;
     font-size: 40pt;
 }
 
 h1 {
   font-family: 'Kavivanar', cursive;
+}
+
+.decode {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 55pt;
 }
