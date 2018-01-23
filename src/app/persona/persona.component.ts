@@ -10,13 +10,17 @@ export class PersonaComponent implements OnInit {
 
   persona: string;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {
+    // workaround, pending https://github.com/angular/angular/pull/20030
+    window.scrollTo(0, 0)
+  }
 
   ngOnInit() {
     this.route.paramMap
         .subscribe((params: ParamMap) => {
           this.persona = params.get('type');
         });
+
   }
 
   toHumanReadable(str: string) {
