@@ -1,1 +1,1 @@
-Visit [https://staslev.github.io/engineering-personas/personas](https://staslev.github.io/engineering-personas/personas) for more details.
+Visit [https://staslev.github.io/engineering-personas/persona-test](https://staslev.github.io/engineering-personas/persona-test) for more details.
