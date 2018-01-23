@@ -12,7 +12,7 @@ export class PersonaComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
     // workaround, pending https://github.com/angular/angular/pull/20030
-    window.scrollTo(0, 0)
+    window.top.scrollTo(0, 0)
   }
 
   ngOnInit() {
