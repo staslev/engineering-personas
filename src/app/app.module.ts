@@ -15,7 +15,7 @@ import { PersonaComponent } from './persona/persona.component';
 
 const appRoutes: Routes = [
   {
-    path: 'personas',
+    path: 'persona-test',
     component: QuestionsComponent,
     resolve: {
       questions: QuestionsResolverService
@@ -26,8 +26,13 @@ const appRoutes: Routes = [
     component: PersonaComponent,
   },
   {
+      path: 'personas',
+      redirectTo: '/persona-test',
+      pathMatch: 'full'
+    },
+  {
     path: '',
-    redirectTo: '/personas',
+    redirectTo: '/persona-test',
     pathMatch: 'full'
   },
 ];

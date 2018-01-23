@@ -1,54 +1,81 @@
-<div class="row" style="position: fixed">
-  <div class="col-2">
-    <img
-      src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/consultant.jpg"
-      class="img-fluid">
-    <img
-      src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/craftsman.png"
-      class="img-fluid">
-    <img
-      src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/academic.png"
-      class="img-fluid">
-  </div>
-  <div class="col">
-    <div></div>
-  </div>
-  <div class="col-2">
-    <img
-      src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/first-responder.gif"
-      class="img-fluid">
-    <img
-      src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/humanitarian.png"
-      class="img-fluid">
-    <div class="d-flex justify-content-center">
-      <img
-        src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/na.png"
-        class="img-fluid">
+<!--<img class="img-fluid pb-5"-->
+<!--src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/consultant.jpg"-->
+<!--&gt;-->
+<!--<img class="img-fluid pb-5"-->
+<!--src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/craftsman.png"-->
+<!--&gt;-->
+<!--<img class="img-fluid pb-5"-->
+<!--src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/academic.png"-->
+<!--&gt;-->
+<!--<img class="img-fluid pb-5"-->
+<!--src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/first-responder.gif">-->
+<!--<img class="img-fluid pb-5"-->
+<!--src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/humanitarian.png"-->
+<!--&gt;-->
+<!--<div class="d-flex justify-content-center">-->
+<!--<img class="img-fluid pb-5"-->
+<!--src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/na.png"-->
+<!--&gt;-->
+<!--</div>-->
+
+<div class="container-fluid">
+  <div class="row pt-5">
+    <div class="col-lg-6 offset-lg-3 col-sm-12">
+      <div class="row">
+        <div class="col-2 offset-1">
+          <img class="img-fluid pb-5"
+               src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/consultant.jpg">
+        </div>
+        <div class="col-2">
+          <img class="img-fluid pb-5"
+               src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/craftsman.png"
+          >
+        </div>
+        <div class="col-2">
+          <img class="img-fluid pb-5"
+               src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/academic.png"
+          >
+        </div>
+        <div class="col-2">
+          <img class="img-fluid pb-5"
+               src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/first-responder.gif">
+        </div>
+        <div class="col-2">
+          <img class="img-fluid pb-5"
+               src="https://raw.githubusercontent.com/staslev/engineering-personas/gh-pages/assets/humanitarian.png"
+          >
+        </div>
+      </div>
     </div>
   </div>
+
 </div>
-<div class="row pt-3">
-  <div class="col-6 offset-3">
-    <div>
-      <p class="lead pt-4">The questions below were devised based on the ideas put forth by Casey
-        Rosenthal
-        in
-        <a href="https://www.linkedin.com/pulse/engineering-personas-casey-rosenthal/">his
-          post</a> titled quite fittingly: <i>"Engineering Personas"</i>.
-        By examining your answers and applying advanced machine learning techniques, included but
-        not limited to, AI, NLP, CNN, DNN, RNN, and of course the ABC,
-        we are able to diagnose the kind of engineering persona you are most likely to be. <br/>
-        While none of this is backed up by actual research, it's a cool experiment nonetheless.
-        Shall we begin?
-      </p>
-      <form #form="ngForm">
+
+<div class="container-fluid">
+  <div class="col col-xl-6 offset-xl-3">
+    <p class="lead pt-4"
+    >The questions below were devised based on the ideas put forth by Casey
+      Rosenthal
+      in
+      <a href="https://www.linkedin.com/pulse/engineering-personas-casey-rosenthal/">his
+        post</a> titled quite fittingly: <i>"Engineering Personas"</i>.
+      By examining your answers and applying advanced machine learning techniques, included but
+      not limited to, AI, NLP, CNN, DNN, RNN, and of course the ABC,
+      we are able to diagnose the kind of engineering persona you are most likely to be. <br/>
+      While none of this is backed up by actual research, it's a cool experiment nonetheless.
+      Shall we begin?
+    </p>
+    <form #form="ngForm">
+
+      <div class="d-flex flex-column">
         <div *ngFor="let question of questions">
+
           <div class="d-flex pt-5">
             <h5 class="lora">
               {{question.text}}
             </h5>
             <span class="px-2 ml-auto"
-                  [style.color]="question.selectedScore === undefined ? 'black' : '#39e600'">
+                  [style.color]="question.selectedScore === undefined ? 'black' : 'LimeGreen'">
           ({{question.id}}/{{questions.length}})
         </span>
           </div>
@@ -56,9 +83,9 @@
 
           <mat-radio-group required [name]="'q-' + question.id"
                            [(ngModel)]="question.selectedScore"
+                           class="d-flex flex-column flex-wrap"
                            *ngIf="question.id == 1">
             <mat-radio-button *ngFor="let answer of question.options"
-                              class="d-flex pb-1"
                               [value]="answer.score"
                               [name]="question.id"
                               color="primary"
@@ -69,10 +96,10 @@
 
           <mat-radio-group required [name]="'q-' + question.id"
                            [(ngModel)]="question.selectedScore"
-                           class="d-flex justify-content-center flex-wrap"
+                           class="d-flex flex-md-row flex-column justify-content-center"
                            *ngIf="question.id > 1">
             <mat-radio-button *ngFor="let answer of question.options"
-                              class="pb-1 px-5"
+                              class="pb-1 px-3"
                               [value]="answer.score"
                               [name]="question.id"
                               color="primary"
@@ -82,7 +109,6 @@
           </mat-radio-group>
 
         </div>
-
         <div class="d-flex justify-content-center pt-5">
           <button type="submit"
                   class="btn btn-secondary"
@@ -90,8 +116,7 @@
                   (click)="computePersona()">Decode me!
           </button>
         </div>
-
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 </div>
