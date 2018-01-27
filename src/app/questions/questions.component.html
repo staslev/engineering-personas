@@ -63,15 +63,15 @@
       not limited to, AI, NLP, CNN, DNN, RNN, and of course the ABC,
       we are able to diagnose the kind of engineering persona you are most likely to be. <br/>
       While none of this is backed up by actual research, it's a cool experiment nonetheless.
-      Shall we begin?
+      <br/>Shall we begin?
     </p>
     <form #form="ngForm">
 
       <div class="d-flex flex-column">
         <div *ngFor="let question of questions">
 
-          <div class="d-flex pt-5">
-            <h5 class="lora">
+          <div class="d-flex pt-3">
+            <h5 class="lora pb-3">
               {{question.text}}
             </h5>
             <span class="px-2 ml-auto"
@@ -79,7 +79,6 @@
           ({{question.id}}/{{questions.length}})
         </span>
           </div>
-          <hr class="pb-1">
 
           <mat-radio-group required [name]="'q-' + question.id"
                            [(ngModel)]="question.selectedScore"
@@ -89,6 +88,7 @@
                               [value]="answer.score"
                               [name]="question.id"
                               color="primary"
+                              class="pb-1 px-3"
                               ngDefaultControl>
               {{answer.label}}
             </mat-radio-button>
@@ -96,7 +96,7 @@
 
           <mat-radio-group required [name]="'q-' + question.id"
                            [(ngModel)]="question.selectedScore"
-                           class="d-flex flex-md-row flex-column justify-content-center"
+                           class="d-flex flex-md-row flex-column"
                            *ngIf="question.id > 1">
             <mat-radio-button *ngFor="let answer of question.options"
                               class="pb-1 px-3"
@@ -107,7 +107,7 @@
               {{answer.label}}
             </mat-radio-button>
           </mat-radio-group>
-
+          <hr class="pb-1">
         </div>
         <div class="d-flex justify-content-center py-5">
           <span class="decode">Decode</span>

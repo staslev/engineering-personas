@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Macondo|Libre+Barcode+128+Text');
 
-label {
-  font-family: 'Lora', cursive;
-  font-size: 14pt;
-  padding-left: 10px;
-}
-
 input[type="radio"] {
   margin-right: 10px;
 }
@@ -16,8 +10,7 @@ input[type="radio"] {
 }
 
 button {
-    margin-bottom: 0.5cm;
-    font-size: 40pt;
+  font-size: 40pt;
 }
 
 h1 {
@@ -26,5 +19,5 @@ h1 {
 
 .decode {
   font-family: 'Libre Barcode 128 Text', cursive;
-  font-size: 55pt;
+  font-size: 60pt;
 }
